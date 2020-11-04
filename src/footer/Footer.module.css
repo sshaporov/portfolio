@@ -1,0 +1,22 @@
+.footerBlock {
+    height: 100vh;
+    background-color: #ab7a63;
+}
+.footerContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.socialContainer{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.socialContainer .social{
+    height: 60px;
+    width: 60px;
+    background-color: gray;
+}
+.title {
+    background-color: #f19921;
+}
