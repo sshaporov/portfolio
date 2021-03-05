@@ -6,7 +6,15 @@
 }
 .imgContainer {
     width: 100%;
-    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #ab7a63;*/
+    background-image: url("https://resheto.net/images/mater/pozitivnye_kartinki_2.jpg");
+    background-size: cover;
+    background-position: center;
+    /*position: relative;*/
 }
 .imgContainer .projectImg {
     height: 200px;
@@ -14,9 +22,9 @@
     background-color: #ef8080;
 }
 .imgContainer .button {
-    position: absolute;
-    top: 50%;
-    left: 30%;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 30%;*/
     text-decoration: none;
     user-select: none;
     background: #605e5e;
