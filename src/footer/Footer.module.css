@@ -1,13 +1,14 @@
 .footerBlock {
-    height: 100vh;
+    /*height: 100vh;*/
     background-color: #ab7a63;
+    /*padding: 50px 0;*/
 }
 .footerContainer {
     flex-direction: column;
     justify-content: flex-start;
 }
 .socialContainer{
-    width: 350px;
+    width: 280px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
