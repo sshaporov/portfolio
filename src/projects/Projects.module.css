@@ -1,6 +1,6 @@
 .projectsBlock {
     height: 100vh;
-    background-color: #5f5f2f;
+    background-color: #1f1f20;
 }
 .projectsContainer {
     flex-direction: column;
@@ -15,4 +15,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 879px) {
+    .projects {
+        justify-content: center;
+    }
 }

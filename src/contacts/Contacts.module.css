@@ -1,5 +1,5 @@
 .contactsBlock {
-    height: 100vh;
+    /*height: 100vh;*/
     background-color: #6d6d5c;
 }
 .contactsContainer {
@@ -10,17 +10,19 @@
     background-color: #64807a;
 }
 .contactsForm {
-    width: 280px;
-    height: 150px;
+    width: 50%;
+    /*height: 150px;*/
     border: 1px solid;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    align-items: center;
+    /*justify-content: space-between;*/
+    /*margin-bottom: 20px;*/
 }
-input {
-    padding: 5px;
+.contactsForm input, .contactsForm textarea {
+    width: 100%;
 }
-textarea {
-    height: 50%;
+
+.button {
+padding: 10px 20px;
 }
