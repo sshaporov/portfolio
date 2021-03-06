@@ -7,20 +7,14 @@
     flex-direction: column;
     justify-content: flex-start;
 }
-.title {
-    background-color: #ffc47b;
-}
-.title h2 {
-
-}
 .projects {
     border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
-
 @media screen and (max-width: 879px) {
     .projects {
         justify-content: center;
