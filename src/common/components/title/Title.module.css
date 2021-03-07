@@ -2,13 +2,13 @@
     margin-bottom: 30px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 5px;
 }
 .title h2 {
     /*font-family: 'Roboto', sans-serif;*/
-    font-weight: 700;
-    font-size: 28px;
-    color: #fff;
-    letter-spacing: 5px;
 }
 .title::before {
     content: "";

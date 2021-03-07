@@ -1,6 +1,6 @@
 .project {
     width: 350px;
-    background-color: #64807a;
+    background-color: #252527;
     display: flex;
     flex-direction: column;
 }
@@ -10,11 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: #ab7a63;*/
     background-image: url("https://resheto.net/images/mater/pozitivnye_kartinki_2.jpg");
     background-size: cover;
     background-position: center;
-    /*position: relative;*/
 }
 .imgContainer .projectImg {
     height: 200px;
@@ -22,27 +20,30 @@
     background-color: #ef8080;
 }
 .imgContainer .button {
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 30%;*/
     text-decoration: none;
     user-select: none;
     background: #605e5e;
     padding: 10px 25px;
 }
-
 .imgContainer .button:hover {
     background: #888484;
 }
 .imgContainer .button:active {
     background: #4a4a4a;
 }
-
-.title {
-    margin: 5px 5px 0px 5px;
-    background-color: #ffc47b;
+.projectInfo {
+    padding: 15px;
 }
-.description {
-    margin: 5px;
-    background-color: #ffc47b;
+.projectTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 5px;
+}
+.projectDescription {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.5;
 }

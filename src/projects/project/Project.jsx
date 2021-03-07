@@ -8,10 +8,12 @@ function Project(props) {
                 {/*<img className={styles.projectImg}/>*/}
                 <a className={styles.button}>Посмотреть</a>
             </div>
-            <div className={styles.title}>{props.title}</div>
-            <span className={styles.description}>
-                {props.description}
-            </span>
+            <div className={styles.projectInfo}>
+                <h3 className={styles.projectTitle}>{props.title}</h3>
+                <span className={styles.projectDescription}>
+                    {props.description}
+                </span>
+            </div>
         </div>
     );
 }
