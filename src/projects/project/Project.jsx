@@ -4,9 +4,8 @@ import styles from "./Project.module.css"
 function Project(props) {
     return (
         <div className={styles.project}>
-            <div className={styles.imgContainer}>
-                {/*<img className={styles.projectImg}/>*/}
-                <a className={styles.button}>Посмотреть</a>
+            <div className={styles.imgContainer} style={props.style}>
+                <a className={styles.button}>View</a>
             </div>
             <div className={styles.projectInfo}>
                 <h3 className={styles.projectTitle}>{props.title}</h3>
