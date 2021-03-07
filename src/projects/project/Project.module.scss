@@ -1,6 +1,9 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
 .project {
     width: 350px;
-    background-color: #252527;
+    background-color: $bgSecondColor;
     display: flex;
     flex-direction: column;
     .imgContainer {
@@ -27,13 +30,14 @@
             font-family: 'Roboto', sans-serif;
             font-size: 14px;
             font-weight: 600;
-            color: #fff;
+            color: $textColor;
             text-decoration: none;
             user-select: none;
             background: #605e5e;
             padding: 10px 25px;
             position: relative;
             z-index: 1;
+            border-radius: 3px;
             &:hover {
                 background: #706d6d;
             }
@@ -45,16 +49,13 @@
     .projectInfo {
         padding: 15px;
         .projectTitle {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 16px;
-            color: #fff;
+            @include text($fontFamily, 16px, 600);
             margin: 0 0 5px;
         }
         .projectDescription {
             font-family: 'Roboto', sans-serif;
             font-size: 12px;
-            color: #fff;
+            color: $textColor;
             line-height: 1.5;
         }
     }

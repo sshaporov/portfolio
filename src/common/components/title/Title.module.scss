@@ -1,0 +1,21 @@
+@import "../../styles/sass/variables";
+
+.title {
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    color: $textColor;
+    letter-spacing: 5px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 55px;
+        height: 1px;
+        background: $primaryColor;
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
