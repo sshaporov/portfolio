@@ -1,17 +1,14 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .skillsBlock {
-    //min-height: 100vh;
     background-color: $bgSecondColor;
     .skillsContainer {
-        flex-direction: column;
-        justify-content: flex-start;
+        @include flex(column, flex-start, center, nowrap);
         .skills {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 30px;
+            @include flex(row, space-between, flex-start, wrap);
+            margin-top: 40px;
         }
     }
 }
