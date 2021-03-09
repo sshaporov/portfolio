@@ -1,5 +1,6 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
+@import "../common/components/button/Button.module";
 
 .contactsBlock {
     background-color: $bgColor;
@@ -47,6 +48,12 @@
                     border: 1px solid transparent;
                     transition: all 0.4s ease-in-out 0s;
                 }
+            }
+            button[type="submit"] {
+                @extend .btn;
+                align-self: center;
+                background-color: transparent;
+                margin-top: 30px;
             }
         }
     }
