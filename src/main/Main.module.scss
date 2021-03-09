@@ -1,13 +1,20 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .mainBlock {
     height: 100vh;
     background-color: $bgColor;
     .text {
-        width: 350px;
-        font-family: $titleFontFamily;
-        font-weight: 400;
-        color: $textColor;
+        width:50%;
+        .firstLine {
+            @include text($titleFontFamily, 15px, 500)
+        }
+        .mainLine {
+            @include text($titleFontFamily, 35px, 700)
+        }
+        .lastLine {
+            @include text($titleFontFamily, 20px, 500)
+        }
     }
     .photo {
         width: 300px;
