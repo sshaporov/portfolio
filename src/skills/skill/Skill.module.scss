@@ -1,0 +1,22 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.skill {
+    width: 250px;
+    background-color: $bgColor;
+    @include flex(column, center, center, wrap);
+    padding: 20px;
+    .icon {
+        height: 60px;
+        width: 60px;
+        background-color: gray;
+    }
+    .title {
+        @include text($titleFontFamily, 16px, 700)
+    }
+    .description {
+        text-align: center;
+        line-height: 1.5;
+        @include text($textFontFamily, 12px, 300)
+    }
+}
