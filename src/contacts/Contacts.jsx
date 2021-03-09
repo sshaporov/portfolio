@@ -2,7 +2,6 @@ import React from "react"
 import styles from "./Contacts.module.scss"
 import stylesContainer from "../common/styles/Container.module.css"
 import {Title} from "../common/components/title/Title"
-import Button from "../common/components/button/Button"
 
 function Contacts() {
     return (
@@ -14,7 +13,6 @@ function Contacts() {
                     <input className={styles.email} type={'text'} placeholder={'Email'}/>
                     <textarea className={styles.message} placeholder={'Message'}/>
                     <button type={'submit'}>Send message</button>
-                    {/*<Button name={'Send message'}/>*/}
                 </form>
             </div>
         </div>
