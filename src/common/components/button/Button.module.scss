@@ -3,11 +3,10 @@
     user-select: none;
     background: #605e5e;
     padding: 10px 25px;
-}
-
-.button:hover {
-    background: #888484;
-}
-.button:active {
-    background: #4a4a4a;
+    &:hover {
+        background: #888484;
+    }
+    &:active {
+        background: #4a4a4a;
+    }
 }
