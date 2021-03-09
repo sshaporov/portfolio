@@ -1,20 +1,52 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
 .contactsBlock {
-    background-color: #6d6d5c;
+    background-color: $bgColor;
     .contactsContainer {
-        flex-direction: column;
-        justify-content: flex-start;
+        @include container();
+        @include flex(column, flex-start, center, nowrap);
         .contactsForm {
-            width: 50%;
-            border: 1px solid;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column, flex-start, stratch, nowrap);
+            width: 540px;
             margin-top: 30px;
-            .contactsForm input, .contactsForm textarea {
+            @media screen and (max-width: 680px) {
                 width: 100%;
             }
-            .button {
-                padding: 10px 20px;
+            .name, .email, .message {
+                background: $bgSecondColor;
+                border: 1px solid #4a4a4a;
+                box-sizing: border-box;
+                @include text(inherit, 12px, 400);
+                outline: none;
+                color: #495057;
+                margin-bottom: 1.2rem;
+                &:-webkit-autofill {
+                    border: 1px solid #4a4a4a;
+                    -webkit-text-fill-color: #495057;
+                    -webkit-box-shadow: 0 0 0 1000px $bgSecondColor inset;
+                    transition: background-color 5000s ease-in-out 0s;
+                    &:focus {
+                        border: 2px solid $bgSecondColor;
+                    }
+                }
+            }
+            .name, .email {
+                height: calc(1.5em + .75rem + 2px);
+                padding: .4rem 15px;
+                &:focus {
+                    border: 1px solid transparent;
+                    transition: all 0.4s ease-in-out 0s;
+                }
+            }
+            .message {
+                min-height: 160px;
+                padding: 15px;
+                resize: none;
+                &:focus {
+                    border: 1px solid transparent;
+                    transition: all 0.4s ease-in-out 0s;
+                }
             }
         }
     }

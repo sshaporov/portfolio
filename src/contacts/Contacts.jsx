@@ -9,9 +9,9 @@ function Contacts() {
             <div className={`${styles.contactsContainer} ${stylesContainer.container}`}>
                 <Title name={'Contacts'}/>
                 <form className={styles.contactsForm}>
-                    <input type={'text'}/>
-                    <input type={'text'}/>
-                    <textarea/>
+                    <input className={styles.name} type={'text'} placeholder={'Name'}/>
+                    <input className={styles.email} type={'text'} placeholder={'Email'}/>
+                    <textarea className={styles.message} placeholder={'Message'}/>
                     <button type={'submit'} className={styles.button}>Отправить</button>
                 </form>
                 {/*<Button name={'Отправить'}/>*/}

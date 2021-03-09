@@ -1,0 +1,12 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.resumeBlock {
+    background-color: #1f1f20;
+    height: 250px;
+    .resumeContainer {
+        @include container();
+        @include flex(column, flex-start, center, nowrap);
+
+    }
+}
