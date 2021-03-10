@@ -3,25 +3,46 @@
 
 .footer {
     background-color: $bgSecondColor;
-    padding: 50px 0 40px 0;
+    //min-height: 300px;
+    @include flex(row, center, stretch, nowrap);
+    padding: 50px 0 20px 0;
     .container {
         @include container();
         @include flex(column, flex-start, center, nowrap);
-        .socialContainer{
-            width: 280px;
-            display: flex;
-            justify-content: space-between;
-            margin: 30px 0;
-            .social{
+        .socialIcons{
+            @include flex(row, space-between, center, nowrap);
+            margin-top: 40px;
+            width: 400px;
+            @media screen and (max-width: 505px) {
+                width: 100%;
+            }
+            .socialIcon{
                 height: 60px;
                 width: 60px;
-                background-color: gray;
+                border-radius: 50%;
+                opacity: 0.5;
+                &:hover {
+                    opacity: 1;
+                    transition: all 0.3s ease-in-out 0s;
+                }
+                @media screen and (max-width: 380px) {
+                    width: 50px;
+                    height: 50px;
+                }
+                a {
+                    width: 100%;
+                    height: 100%;
+                    @include flex(row, center, center, nowrap);
+                    img {
+                        width: 100%;
+                    }
+                }
             }
         };
         .copyright {
             margin-top: 40px;
-            @include text($textFontFamily, 14px, 300)
-            opacity: 0.6;
+            @include text($textFontFamily, 12px, 300);
+            opacity: 0.7;
         }
     }
 }

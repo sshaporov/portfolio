@@ -1,6 +1,10 @@
 import React from "react"
 import styles from "./Footer.module.scss"
 import {Title} from "../common/components/title/Title";
+import telegramIcon from './../assets/image/icons/telegram.svg'
+import facebookIcon from './../assets/image/icons/facebook.svg'
+import linkedinIcon from './../assets/image/icons/linkedin.svg'
+import githubIcon from './../assets/image/icons/github.svg'
 
 function Footer() {
     return (
@@ -25,7 +29,7 @@ function Footer() {
                     </div>
                     <div className={styles.socialIcon}>
                         <a>
-                            <img src={gitIcon} alt=''/>
+                            <img src={githubIcon} alt=''/>
                         </a>
                     </div>
                 </div>
