@@ -1,13 +1,11 @@
 @import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
 
 .title {
     margin-bottom: 30px;
-    font-family: 'Open Sans', sans-serif;
+    @include text($titleFontFamily, 24px, 700);
+    letter-spacing: 3px;
     position: relative;
-    font-weight: 500;
-    font-size: 20px;
-    color: $textColor;
-    letter-spacing: 5px;
     &::before {
         content: "";
         position: absolute;

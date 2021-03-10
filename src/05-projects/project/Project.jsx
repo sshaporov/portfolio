@@ -1,11 +1,12 @@
 import React from "react"
 import styles from "./Project.module.scss"
+import Button from "../../common/components/button/Button";
 
 function Project(props) {
     return (
         <div className={styles.project}>
             <div className={styles.imgContainer} style={props.style}>
-                <a className={styles.button}>View</a>
+                <Button name={'View project'}/>
             </div>
             <div className={styles.projectInfo}>
                 <h3 className={styles.projectTitle}>{props.title}</h3>

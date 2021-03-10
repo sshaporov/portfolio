@@ -4,6 +4,7 @@
 .resumeBlock {
     background-color: #1f1f20;
     height: 250px;
+    padding: 50px 0 80px 0;
     .resumeContainer {
         @include container();
         @include flex(column, flex-start, center, nowrap);
