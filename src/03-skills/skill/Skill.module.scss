@@ -4,7 +4,7 @@
 .skill {
     width: 150px;
     @include flex(column, center, center, wrap);
-    padding: 0 20px 0 20px;
+    padding: 40px 20px 0 20px;
     .icon {
         height: 60px;
         width: 60px;

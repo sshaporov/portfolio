@@ -17,7 +17,7 @@ function Projects() {
         <div className={styles.projects}>
             <div className={styles.container}>
                 <Title name={'Projects'}/>
-                <div className={styles.projects}>
+                <div className={styles.projectslist}>
                     <Project
                         title={'Quiz'}
                         description={'Project description description description description description description description description description description description description description'}

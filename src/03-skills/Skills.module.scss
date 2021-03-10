@@ -9,7 +9,6 @@
         @include flex(column, flex-start, center, nowrap);
         .skillsList {
             width: 100%;
-            margin-top: 40px;
             @include flex(row, space-between, flex-start, wrap);
             @media screen and (max-width: 1124px) {
                 justify-content: center;
