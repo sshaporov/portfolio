@@ -3,7 +3,6 @@
 
 .skill {
     width: 250px;
-    background-color: $bgColor;
     @include flex(column, center, center, wrap);
     padding: 20px;
     .icon {

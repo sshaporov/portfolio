@@ -5,7 +5,7 @@ import {Title} from "../common/components/title/Title";
 
 function Footer() {
     return (
-        <div className={styles.footerBlock}>
+        <div className={styles.footer}>
             <div className={`${styles.footerContainer} ${stylesContainer.container}`}>
                 <Title name={'Sergey Shaporov'}/>
                 <div className={styles.socialContainer}>

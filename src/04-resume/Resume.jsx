@@ -5,7 +5,7 @@ import {Title} from "../common/components/title/Title"
 
 function Resume() {
     return (
-        <div className={styles.resumeBlock}>
+        <div className={styles.resume}>
             <div className={`${styles.resumeContainer} ${stylesContainer.container}`}>
                 <Title name={'Resume'}/>
 
