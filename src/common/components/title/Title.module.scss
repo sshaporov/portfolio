@@ -3,7 +3,7 @@
 
 .title {
     margin-bottom: 30px;
-    @include text($titleFontFamily, 24px, 700);
+    @include text($titleFontFamily, 26px, 700);
     letter-spacing: 3px;
     position: relative;
     &::before {

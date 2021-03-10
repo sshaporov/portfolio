@@ -15,32 +15,34 @@ $dot: 11px;
 $line: 4px;
 
 .resume {
-    background-color: #1f1f20;
-
+    background-color: $bgColor;
     padding: 50px 0 80px 0;
     .container {
         @include container();
         @include flex(column, flex-start, center, nowrap);
-        .timelineContent {
-            text-align: center;
             .timeline {
                 border-left: 4px solid $primaryColor;
                 background: $bgSecondColor;
-                font-family: $textFontFamily;
                 position: relative;
                 padding: 50px;
                 list-style: none;
                 text-align: left;
                 max-width: 500px;
+                margin: 50px 0;
                 h3 {
-                    font-family: $titleFontFamily;
-                    letter-spacing: 1.5px;
-                    font-weight: 400;
-                    font-size: 1.4em;
+                    @include text($titleFontFamily, 18px, 700);
+                    letter-spacing: 2px;
+                }
+                p {
+                    @include text($textFontFamily, 14px, 500);
+                    margin: 5px 0;
+                }
+                span {
+                    @include text($textFontFamily, 12px, 300);
+                    line-height: 1.5;
                 }
                 .event {
                     padding-bottom: 30px;
-                    margin-bottom: 10px;
                     position: relative;
 
                     &:last-of-type {
@@ -56,30 +58,27 @@ $line: 4px;
                     }
 
                     &:before {
-                        left: ((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1;
+                        left: -100px;
                         content: attr(data-date);
                         text-align: right;
-                        font-weight: 100;
-                        font-size: 0.9em;
-                        min-width: $date;
-                        font-family: $titleFontFamily;
-                        @media screen and (max-width: 600px) {
+                        opacity: 0.6;
+                        @include text($titleFontFamily, 14px, 500);
+                        @media screen and (max-width: 622px) {
                             opacity: 0;
                         }
                     }
 
                     &:after {
-                        box-shadow: 0 0 0 $dotborder fade($primaryColor,100%);
                         left: ($spacing + $line + ($dot * 0.35)) * -1;
-                        background: lighten($background,5%);
+                        background: $primaryColor;
                         border-radius: 50%;
-                        height: $dot;
-                        width: $dot;
+                        height: 11px;
+                        width: 11px;
                         content: "";
                         top: 5px;
                     }
                 }
             }
-        }
+        //}
     }
 }
