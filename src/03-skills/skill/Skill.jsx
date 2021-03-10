@@ -6,7 +6,6 @@ function Skill(props) {
         <div className={styles.skill}>
             <div className={styles.icon}></div>
             <div className={styles.title}>{props.title}</div>
-            <span className={styles.description}>{props.description}</span>
         </div>
     );
 }

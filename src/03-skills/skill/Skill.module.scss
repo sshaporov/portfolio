@@ -2,20 +2,16 @@
 @import "../../common/styles/sass/mixins";
 
 .skill {
-    width: 250px;
+    width: 150px;
     @include flex(column, center, center, wrap);
-    padding: 20px;
+    padding: 0 20px 0 20px;
     .icon {
         height: 60px;
         width: 60px;
         background-color: gray;
     }
     .title {
-        @include text($titleFontFamily, 16px, 700)
-    }
-    .description {
-        text-align: center;
-        line-height: 1.5;
-        @include text($textFontFamily, 12px, 300)
+        margin-top: 10px;
+        @include text($titleFontFamily, 16px, 500)
     }
 }

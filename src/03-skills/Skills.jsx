@@ -8,13 +8,13 @@ function Skills() {
         <div className={styles.skills}>
             <div className={styles.container}>
                 <Title name={'Skills'}/>
-                <div className={styles.skills}>
-                    <Skill title={'JavaScript'} description={'asf asd fasjdfasd fasdfasdfasd fasd fasdf asdfasdfasdf asdfasdfasdf sadfsadf'}/>
-                    <Skill title={'ReactJS'} description={'asf sadfaskdfbaskdf asd fasjdfasd fasdfasdfasd fasd fasdf asdfasdfasdf asdfasdfasdf sadfsadf'}/>
-                    <Skill title={'NodeJS'} description={'asf sadfaskdfbaskdf asd fasjdfasd fasdfasdfasd fasd fasdf asdfasdfasdf asdfasdfasdf sadfsadf'}/>
-                    <Skill title={'Express'} description={'asf sadfaskdfbaskdf asd fasjdfasd fasdfasdfasd fasd fasdf asdfasdfasdf asdfasdfasdf sadfsadf'}/>
-                    <Skill title={'MongoDB'} description={'asf sadfaskdfbaskdf asd fasjdfasd fasdfasdfasd fasd fasdf asdfasdfasdf asdfasdfasdf sadfsadf'}/>
-                    <Skill title={'CSS/HTML'} description={'asf sadfaskdfbaskdf asd fasjdfasd fasdfasdfasd fasd fasdf asdfasdfasdf asdfasdfasdf sadfsadf'}/>
+                <div className={styles.skillsList}>
+                        <Skill title={'JavaScript'}/>
+                        <Skill title={'ReactJS'}/>
+                        <Skill title={'NodeJS'}/>
+                        <Skill title={'Express'}/>
+                        <Skill title={'MongoDB'}/>
+                        <Skill title={'CSS/HTML'}/>
                 </div>
             </div>
         </div>
