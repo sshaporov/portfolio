@@ -5,10 +5,10 @@
     height: 100vh;
     background-color: $bgColor;
     @include flex(row, center, center, nowrap);
-    .mainContainer {
+    .container {
         @include container();
         @include flex(row, space-around, center, wrap);
-        .greetingBlock {
+        .greeting {
             @include flex(column, flex-start, flex-start, nowrap);
 
             .firstLine {

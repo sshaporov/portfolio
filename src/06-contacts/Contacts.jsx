@@ -1,12 +1,11 @@
 import React from "react"
 import styles from "./Contacts.module.scss"
-import stylesContainer from "../common/styles/Container.module.css"
 import {Title} from "../common/components/title/Title"
 
 function Contacts() {
     return (
         <div className={styles.contacts}>
-            <div className={`${styles.contactsContainer} ${stylesContainer.container}`}>
+            <div className={styles.container}>
                 <Title name={'Contacts'}/>
                 <form className={styles.contactsForm}>
                     <input className={styles.name} type={'text'} placeholder={'Name'}/>

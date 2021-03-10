@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./Projects.module.scss"
-import stylesContainer from "../common/styles/Container.module.css"
 import Project from "./project/Project"
 import {Title} from "../common/components/title/Title"
 import todoImg from '../assets/image/todo.png'
@@ -16,7 +15,7 @@ function Projects() {
 
     return (
         <div className={styles.projects}>
-            <div className={`${styles.projectsContainer} ${stylesContainer.container}`}>
+            <div className={styles.container}>
                 <Title name={'Projects'}/>
                 <div className={styles.projects}>
                     <Project

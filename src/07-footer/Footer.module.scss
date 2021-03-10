@@ -4,7 +4,7 @@
 .footer {
     background-color: $bgSecondColor;
     padding: 50px 0 80px 0;
-    .footerContainer {
+    .container {
         @include container();
         @include flex(column, flex-start, center, nowrap);
         .socialContainer{

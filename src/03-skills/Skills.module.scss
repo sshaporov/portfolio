@@ -4,7 +4,7 @@
 .skills {
     background-color: $bgSecondColor;
     padding: 50px 0 80px 0;
-    .skillsContainer {
+    .container {
         @include container();
         @include flex(column, flex-start, center, nowrap);
         .skills {
