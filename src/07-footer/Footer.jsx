@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "./Footer.module.scss"
 import {Title} from "../common/components/title/Title";
-import telegramIcon from './../assets/image/icons/telegram.svg'
-import facebookIcon from './../assets/image/icons/facebook.svg'
-import linkedinIcon from './../assets/image/icons/linkedin.svg'
-import githubIcon from './../assets/image/icons/github.svg'
+import telegramIcon from '../assets/image/icons/social/telegram.svg'
+import facebookIcon from '../assets/image/icons/social/facebook.svg'
+import linkedinIcon from '../assets/image/icons/social/linkedin.svg'
+import githubIcon from '../assets/image/icons/social/github.svg'
 
 function Footer() {
     return (

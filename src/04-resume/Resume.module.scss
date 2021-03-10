@@ -1,12 +1,85 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 
+$background: #252827;
+
+
+$color-light: white;
+$color-dim: #6c6d6d;
+$spacing: 50px;
+$radius: 4px;
+
+$date: 120px;
+$dotborder: 4px;
+$dot: 11px;
+$line: 4px;
+
 .resume {
     background-color: #1f1f20;
-    height: 250px;
+
     padding: 50px 0 80px 0;
     .container {
         @include container();
         @include flex(column, flex-start, center, nowrap);
+        .timelineContent {
+            text-align: center;
+            .timeline {
+                border-left: 4px solid $primaryColor;
+                background: $bgSecondColor;
+                font-family: $textFontFamily;
+                position: relative;
+                padding: 50px;
+                list-style: none;
+                text-align: left;
+                max-width: 500px;
+                h3 {
+                    font-family: $titleFontFamily;
+                    letter-spacing: 1.5px;
+                    font-weight: 400;
+                    font-size: 1.4em;
+                }
+                .event {
+                    padding-bottom: 30px;
+                    margin-bottom: 10px;
+                    position: relative;
+
+                    &:last-of-type {
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                        border: none;
+                    }
+
+                    &:before, &:after {
+                        position: absolute;
+                        display: block;
+                        top: 0;
+                    }
+
+                    &:before {
+                        left: ((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1;
+                        content: attr(data-date);
+                        text-align: right;
+                        font-weight: 100;
+                        font-size: 0.9em;
+                        min-width: $date;
+                        font-family: $titleFontFamily;
+                        @media screen and (max-width: 600px) {
+                            opacity: 0;
+                        }
+                    }
+
+                    &:after {
+                        box-shadow: 0 0 0 $dotborder fade($primaryColor,100%);
+                        left: ($spacing + $line + ($dot * 0.35)) * -1;
+                        background: lighten($background,5%);
+                        border-radius: 50%;
+                        height: $dot;
+                        width: $dot;
+                        content: "";
+                        top: 5px;
+                    }
+                }
+            }
+        }
     }
 }

@@ -10,7 +10,7 @@
         .skillsList {
             width: 100%;
             @include flex(row, space-between, flex-start, wrap);
-            @media screen and (max-width: 1124px) {
+            @media screen and (max-width: 1499px) {
                 justify-content: center;
             }
         }

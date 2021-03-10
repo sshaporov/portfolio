@@ -11,10 +11,12 @@ function Skills() {
                 <div className={styles.skillsList}>
                         <Skill title={'JavaScript'}/>
                         <Skill title={'ReactJS'}/>
+                        <Skill title={'Redux'}/>
                         <Skill title={'NodeJS'}/>
                         <Skill title={'Express'}/>
                         <Skill title={'MongoDB'}/>
-                        <Skill title={'CSS/HTML'}/>
+                        <Skill title={'HTML'}/>
+                        <Skill title={'CSS'}/>
                 </div>
             </div>
         </div>

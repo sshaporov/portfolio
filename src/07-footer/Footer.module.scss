@@ -23,6 +23,7 @@
                 opacity: 0.5;
                 &:hover {
                     opacity: 1;
+                    cursor: pointer;
                     transition: all 0.3s ease-in-out 0s;
                 }
                 @media screen and (max-width: 380px) {
