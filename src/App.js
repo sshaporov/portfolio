@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./01-header/Header";
 import Main from "./02-main/Main";
 import Skills from "./03-skills/Skills";
@@ -8,10 +8,14 @@ import Footer from "./07-footer/Footer";
 import Resume from "./04-resume/Resume";
 
 function App() {
-  return (
+    const [burgerIsOpened, setBurgerIsOpened] = useState(false)
+    const onBurgerBtnClick = () => {
+        setBurgerIsOpened(!burgerIsOpened)
+    }
+    return (
     <div className="App">
-      <Header/>
-      <Main/>
+      <Header burgerIsOpened={burgerIsOpened} onBurgerBtnClick={onBurgerBtnClick}/>
+      <Main burgerIsOpened={burgerIsOpened}/>
       <Skills/>
       <Resume/>
       <Projects/>

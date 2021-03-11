@@ -3,12 +3,12 @@ import styles from "./Main.module.scss"
 import Fade from 'react-reveal/Fade'
 import ReactTypingEffect from 'react-typing-effect'
 
-function Main() {
+function Main(props) {
     return (
         <div className={styles.main}>
             <div className={styles.container}>
                 <Fade>
-                    <div className={styles.greeting}>
+                    <div className={props.burgerIsOpened ? `${styles.greeting} ${styles.showBurger}` : styles.greeting}>
                         <div className={styles.firstLine}>Hi there</div>
                         <div className={styles.mainLine}>I am Sergey <span className={styles.surname}>Shaporov</span></div>
                         <ReactTypingEffect className={styles.lastLine} text={'JS Developer'}/>

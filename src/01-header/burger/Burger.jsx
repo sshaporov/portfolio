@@ -1,18 +1,17 @@
-import React, {useState} from "react"
+import React from "react"
 import styles from "./Burger.module.scss"
 import {Link} from 'react-scroll'
 
 
-function Burger() {
+function Burger(props) {
 
-    const [menuIsOpened, setMenuIsOpened] = useState(false)
     const onBurgerBtnClick = () => {
-        setMenuIsOpened(!menuIsOpened)
+        props.onBurgerBtnClick(!props.isOpened)
     }
 
     return (
         <div className={styles.burger}>
-            <div className={menuIsOpened ? `${styles.burgerItems} ${styles.show}` : styles.burgerItems}>
+            <div className={props.isOpened ? `${styles.burgerItems} ${styles.show}` : styles.burgerItems}>
                 <Link to="skills"
                       spy={true}
                       smooth={true}
