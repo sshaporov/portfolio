@@ -1,0 +1,13 @@
+.scrollIcon {
+  width: 60px;
+  height: 60px;
+  opacity: .2;
+  &:hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
