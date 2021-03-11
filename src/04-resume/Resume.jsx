@@ -2,18 +2,19 @@ import React from "react"
 import styles from "./Resume.module.scss"
 import {Title} from "../common/components/title/Title"
 import Button from "../common/components/button/Button";
+import Fade from "react-reveal/Fade";
 
 function Resume() {
     return (
         <div className={styles.resume}>
             <div className={styles.container}>
-                    <Title name={'Resume'}/>
+                <Title name={'Resume'}/>
+                <Fade>
                     <ul className={styles.timeline}>
                         <li className={styles.event} data-date="2012">
                             <h3>Mostra Group</h3>
                             <p>QA Engineer </p>
                             <span>Functional testing Web and Desktop software. Test design, test planning. asdfasdfa asdfasdfasdf askdfjhaskjdfhasj asdfhasdjf asdfasdfasdf sadf dsfa sdf sadfasdfasdf</span>
-
                         </li>
                         <li className={styles.event} data-date="2013">
                             <h3>Qulix Systems</h3>
@@ -31,7 +32,8 @@ function Resume() {
                             <span>Functional testing Web and Desktop software. Test design, test planning. asdfasdfa asdfasdfasdf askdfjhaskjdfhasj asdfhasdjf asdfasdfasdf sadf dsfa sdf sadfasdfasdf</span>
                         </li>
                     </ul>
-                <Button name={'Download CV'}/>
+                    <Button name={'Download CV'}/>
+                </Fade>
             </div>
         </div>
     );

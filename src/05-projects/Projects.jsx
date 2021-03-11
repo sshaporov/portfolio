@@ -4,6 +4,7 @@ import Project from "./project/Project"
 import {Title} from "../common/components/title/Title"
 import todoImg from '../assets/image/todo.png'
 import quizImg from '../assets/image/quiz.png'
+import Fade from "react-reveal/Fade";
 
 function Projects() {
     const quizImgStyles = {
@@ -17,18 +18,20 @@ function Projects() {
         <div className={styles.projects}>
             <div className={styles.container}>
                 <Title name={'Projects'}/>
-                <div className={styles.projectslist}>
-                    <Project
-                        title={'Quiz'}
-                        description={'Project description description description description description description description description description description description description description'}
-                        style={quizImgStyles}
-                    />
-                    <Project
-                        title={'Todo list'}
-                        description={'Project description description description description description description description description description description description description description description description description'}
-                        style={todoImgStyles}
-                    />
-                </div>
+                <Fade>
+                    <div className={styles.projectslist}>
+                        <Project
+                            title={'Quiz'}
+                            description={'Project description description description description description description description description description description description description description'}
+                            style={quizImgStyles}
+                        />
+                        <Project
+                            title={'Todo list'}
+                            description={'Project description description description description description description description description description description description description description description description description'}
+                            style={todoImgStyles}
+                        />
+                    </div>
+                </Fade>
             </div>
         </div>
     );

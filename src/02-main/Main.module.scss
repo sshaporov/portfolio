@@ -10,7 +10,6 @@
         @include flex(row, space-around, center, wrap);
         .greeting {
             @include flex(column, flex-start, flex-start, nowrap);
-
             .firstLine {
                 @include text($titleFontFamily, 15px, 500)
             }
@@ -34,9 +33,15 @@
                         z-index: -1;
                     }
                 }
+                @media screen and (max-width: 544px) {
+                    text-align: center ;
+                }
             }
             .lastLine {
                 @include text($titleFontFamily, 20px, 500)
+            }
+            @media screen and (max-width: 919px) {
+                align-items: center;
             }
         }
         .photoContainer {
