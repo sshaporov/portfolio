@@ -13,6 +13,7 @@ function Main() {
                         <div className={styles.mainLine}>I am Sergey <span className={styles.surname}>Shaporov</span></div>
                         <ReactTypingEffect className={styles.lastLine} text={'JS Developer'}/>
                     </div>
+
                     <div className={styles.photoContainer}>
                         <div className={styles.image}></div>
                     </div>

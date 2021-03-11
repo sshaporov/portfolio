@@ -4,9 +4,15 @@
 .nav {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
     a {
         text-decoration: none;
         @include text($titleFontFamily, 15px, 500);
         margin: 0 20px;
+        &:hover {
+            text-decoration: none;
+            color: $primaryColor;
+            transition: .1s;
+        }
     }
 }
