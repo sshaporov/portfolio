@@ -9,7 +9,7 @@
         @include flex(column, flex-start, center, nowrap);
         .projectslist {
             width: 100%;
-            @include flex(row, space-between, flex-start, wrap);
+            @include flex(row, space-around, flex-start, wrap);
             margin-top: 40px;
             @media screen and (max-width: 879px) {
                 justify-content: center;
