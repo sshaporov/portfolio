@@ -3,6 +3,16 @@ import styles from "./Skills.module.scss"
 import Skill from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
 import Fade from "react-reveal/Fade";
+import js from "./../assets/image/icons/js.svg"
+import react from "./../assets/image/icons/react.svg"
+import redux from "./../assets/image/icons/redux.svg"
+import node from "./../assets/image/icons/node.svg"
+import express from "./../assets/image/icons/express.svg"
+import mongodb from "./../assets/image/icons/mongodb.svg"
+import html from "./../assets/image/icons/html_color.svg"
+import css from "./../assets/image/icons/css_color.svg"
+
+
 
 function Skills() {
     return (
@@ -11,14 +21,14 @@ function Skills() {
                 <Title name={'Skills'}/>
                 <Fade>
                     <div className={styles.skillsList}>
-                        <Skill title={'JavaScript'}/>
-                        <Skill title={'ReactJS'}/>
-                        <Skill title={'Redux'}/>
-                        <Skill title={'NodeJS'}/>
-                        <Skill title={'Express'}/>
-                        <Skill title={'MongoDB'}/>
-                        <Skill title={'HTML'}/>
-                        <Skill title={'CSS'}/>
+                        <Skill title={'JavaScript'} icon={js}/>
+                        <Skill title={'ReactJS'} icon={react}/>
+                        <Skill title={'Redux'} icon={redux}/>
+                        <Skill title={'NodeJS'} icon={node}/>
+                        <Skill title={'Express'} icon={express}/>
+                        <Skill title={'MongoDB'} icon={mongodb}/>
+                        <Skill title={'HTML'} icon={html}/>
+                        <Skill title={'CSS'} icon={css}/>
                     </div>
                 </Fade>
             </div>
