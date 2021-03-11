@@ -64,7 +64,7 @@ $line: 4px;
                         opacity: 0.6;
                         @include text($titleFontFamily, 14px, 500);
                         @media screen and (max-width: 622px) {
-                            opacity: 0;
+                            display: none;
                         }
                     }
 
@@ -79,6 +79,5 @@ $line: 4px;
                     }
                 }
             }
-        //}
     }
 }
