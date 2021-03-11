@@ -3,14 +3,14 @@ import styles from "./Skills.module.scss"
 import Skill from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
 import Fade from "react-reveal/Fade";
-import js from "./../assets/image/icons/js.svg"
-import react from "./../assets/image/icons/react.svg"
-import redux from "./../assets/image/icons/redux.svg"
-import node from "./../assets/image/icons/node.svg"
-import express from "./../assets/image/icons/express.svg"
-import mongodb from "./../assets/image/icons/mongodb.svg"
-import html from "./../assets/image/icons/html_color.svg"
-import css from "./../assets/image/icons/css_color.svg"
+import js from "../assets/image/icons/skills/js.svg"
+import react from "../assets/image/icons/skills/react.svg"
+import redux from "../assets/image/icons/skills/redux.svg"
+import node from "../assets/image/icons/skills/node.svg"
+import express from "../assets/image/icons/skills/express.svg"
+import mongodb from "../assets/image/icons/skills/mongodb.svg"
+import html from "../assets/image/icons/skills/html_color.svg"
+import css from "../assets/image/icons/skills/css_color.svg"
 
 
 
