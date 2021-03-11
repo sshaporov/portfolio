@@ -1,6 +1,8 @@
 import React from "react"
 import styles from "./Burger.module.scss"
 import {Link} from 'react-scroll'
+import burger from './../../assets/image/icons/burger.svg'
+import close from './../../assets/image/icons/close.svg'
 
 
 function Burger(props) {
@@ -41,7 +43,7 @@ function Burger(props) {
                 >Contacts</Link>
             </div>
             <div onClick={onBurgerBtnClick} className={styles.burgerBtn}>
-
+                <img src={props.isOpened ? close : burger}/>
             </div>
         </div>
     );
