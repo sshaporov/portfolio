@@ -25,7 +25,7 @@ function Skills() {
                         <Skill title={'ReactJS'} icon={react}/>
                         <Skill title={'Redux'} icon={redux}/>
                         <Skill title={'NodeJS'} icon={node}/>
-                        <Skill title={'Express'} icon={express}/>
+                        <Skill title={'ExpressJS'} icon={express}/>
                         <Skill title={'MongoDB'} icon={mongodb}/>
                         <Skill title={'HTML'} icon={html}/>
                         <Skill title={'CSS'} icon={css}/>
