@@ -11,7 +11,7 @@ function Contacts() {
     const [message, setMessage] = useState('')
 
     const sendMessage = () => {
-        axios.post('http://localhost:3011/sendMessage', {name, email, message})
+        axios.post('https://my-smtp-server-nodejs.herokuapp.com/sendMessage', {name, email, message})
             .then(function (response) {
                 console.log(response);
             })

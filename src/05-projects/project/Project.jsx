@@ -6,7 +6,7 @@ function Project(props) {
     return (
         <div className={styles.project}>
             <div className={styles.imgContainer} style={props.style}>
-                <Button name={'View project'}/>
+                <Button name={'View project'} href={props.link}/>
             </div>
             <div className={styles.projectInfo}>
                 <h3 className={styles.projectTitle}>{props.title}</h3>
