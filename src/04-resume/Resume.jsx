@@ -32,7 +32,7 @@ function Resume() {
                             <span>Development of new features (React / Redux). Bug fixing. User interface development using UI libs (Ant Design / Material UI). Refactoring code. Code coverage with Unit tests (Jest)</span>
                         </li>
                     </ul>
-                    <Button name={'Download CV'}/>
+                    <Button name={'Download CV'} isDownload/>
                 </Fade>
             </div>
         </div>
