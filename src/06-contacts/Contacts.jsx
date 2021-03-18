@@ -18,13 +18,13 @@ function Contacts() {
     const sendMessage = () => {
         axios.post('https://my-smtp-server-nodejs.herokuapp.com/sendMessage', {name, email, message})
             .then(function (response) {
-                console.log(response);
+                // console.log(response);
                 setName('')
                 setEmail('')
                 setMessage('')
             })
             .catch(function (error) {
-                console.log(error);
+                // console.log(error);
             });
     }
 
