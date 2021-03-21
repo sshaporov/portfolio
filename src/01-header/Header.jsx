@@ -1,7 +1,7 @@
-import React from "react"
-import styles from "./Header.module.scss"
-import Nav from "./nav/Nav";
-import Burger from "./burger/Burger";
+import React from 'react'
+import styles from './Header.module.scss'
+import Nav from './nav/Nav'
+import Burger from './burger/Burger'
 
 function Header(props) {
     return (

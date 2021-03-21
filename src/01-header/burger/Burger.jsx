@@ -1,5 +1,5 @@
-import React from "react"
-import styles from "./Burger.module.scss"
+import React from 'react'
+import styles from './Burger.module.scss'
 import {Link} from 'react-scroll'
 import burger from './../../assets/image/icons/burger.svg'
 import close from './../../assets/image/icons/close.svg'
