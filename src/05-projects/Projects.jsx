@@ -3,13 +3,17 @@ import styles from "./Projects.module.scss"
 import Project from "./project/Project"
 import {Title} from "../common/components/title/Title"
 import todoImg from '../assets/image/todo.jpeg'
-import quizImg from '../assets/image/quiz.jpg'
+import auth1Img from '../assets/image/auth1.jpeg'
+import auth2Img from '../assets/image/auth2.jpeg'
 import chatImg from '../assets/image/chat.png'
 import Fade from "react-reveal/Fade";
 
 function Projects() {
-    const quizImgStyles = {
-        backgroundImage: 'url(' + quizImg + ')'
+    const auth1ImgStyles = {
+        backgroundImage: 'url(' + auth1Img + ')'
+    }
+    const auth2ImgStyles = {
+        backgroundImage: 'url(' + auth2Img + ')'
     }
     const todoImgStyles = {
         backgroundImage: 'url(' + todoImg + ')'
@@ -25,15 +29,15 @@ function Projects() {
                 <Fade>
                     <div className={styles.projectslist}>
                         <Project
-                            title={'JWT authentication version 1.0'}
+                            title={'JWT authentication v1.0'}
                             description={'This is a simple implementation jwt authentication on NodeJS using only access token. Technology stack: nodeJS, express, mongoDB'}
-                            style={quizImgStyles}
+                            style={auth1ImgStyles}
                             link={'https://github.com/sshaporov/auth-jwt'}
                         />
                         <Project
-                            title={'JWT authentication version 2.0'}
+                            title={'JWT authentication v2.0'}
                             description={'This is an implementation jwt authentication on NodeJS using access and refresh tokens. Technology stack: nodeJS, express, mongoDB, redis'}
-                            style={quizImgStyles}
+                            style={auth2ImgStyles}
                             link={'https://github.com/sshaporov/auth-jwts'}
                         />
                         <Project
