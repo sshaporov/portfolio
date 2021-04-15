@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0711676f.chunk.css",
-    "main.js": "/portfolio/static/js/main.ed12753f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ed12753f.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.7a7866fe.chunk.css",
+    "main.js": "/portfolio/static/js/main.9e000564.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9e000564.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d144ad22.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d144ad22.js.map",
     "static/js/2.73832a0e.chunk.js": "/portfolio/static/js/2.73832a0e.chunk.js",
@@ -10,8 +10,10 @@
     "static/js/3.04173c4a.chunk.js": "/portfolio/static/js/3.04173c4a.chunk.js",
     "static/js/3.04173c4a.chunk.js.map": "/portfolio/static/js/3.04173c4a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.0711676f.chunk.css.map": "/portfolio/static/css/main.0711676f.chunk.css.map",
+    "static/css/main.7a7866fe.chunk.css.map": "/portfolio/static/css/main.7a7866fe.chunk.css.map",
     "static/js/2.73832a0e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.73832a0e.chunk.js.LICENSE.txt",
+    "static/media/auth1.c5a968f3.jpeg": "/portfolio/static/media/auth1.c5a968f3.jpeg",
+    "static/media/auth2.2d956828.jpeg": "/portfolio/static/media/auth2.2d956828.jpeg",
     "static/media/Main.module.scss": "/portfolio/static/media/ava.d01f0562.jpg",
     "static/media/burger.1f99476d.svg": "/portfolio/static/media/burger.1f99476d.svg",
     "static/media/chat.ba04c69b.png": "/portfolio/static/media/chat.ba04c69b.png",
@@ -25,7 +27,6 @@
     "static/media/linkedin.8861cb0e.svg": "/portfolio/static/media/linkedin.8861cb0e.svg",
     "static/media/mongodb.e4025ae2.svg": "/portfolio/static/media/mongodb.e4025ae2.svg",
     "static/media/node.10354602.svg": "/portfolio/static/media/node.10354602.svg",
-    "static/media/quiz.ed0afeee.jpg": "/portfolio/static/media/quiz.ed0afeee.jpg",
     "static/media/react.4ee8d000.svg": "/portfolio/static/media/react.4ee8d000.svg",
     "static/media/redux.04851e4f.svg": "/portfolio/static/media/redux.04851e4f.svg",
     "static/media/scroll.37143881.svg": "/portfolio/static/media/scroll.37143881.svg",
@@ -35,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.d144ad22.js",
     "static/js/2.73832a0e.chunk.js",
-    "static/css/main.0711676f.chunk.css",
-    "static/js/main.ed12753f.chunk.js"
+    "static/css/main.7a7866fe.chunk.css",
+    "static/js/main.9e000564.chunk.js"
   ]
 }
