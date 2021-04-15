@@ -25,10 +25,16 @@ function Projects() {
                 <Fade>
                     <div className={styles.projectslist}>
                         <Project
-                            title={'Quiz'}
-                            description={'This is a quiz app. Which allows to configure the game with any number of question cards. There is also a logic for displaying questions, which takes into account the frequency of display and the rating of the questions. Technology stack: MERN'}
+                            title={'JWT authentication version 1.0'}
+                            description={'This is a simple implementation jwt authentication on NodeJS using only access token. Technology stack: nodeJS, express, mongoDB'}
                             style={quizImgStyles}
-                            link={'https://sshaporov.github.io/friday/'}
+                            link={'https://github.com/sshaporov/auth-jwt'}
+                        />
+                        <Project
+                            title={'JWT authentication version 2.0'}
+                            description={'This is an implementation jwt authentication on NodeJS using access and refresh tokens. Technology stack: nodeJS, express, mongoDB, redis'}
+                            style={quizImgStyles}
+                            link={'https://github.com/sshaporov/auth-jwts'}
                         />
                         <Project
                             title={'Todo list'}
@@ -38,7 +44,7 @@ function Projects() {
                         />
                         <Project
                             title={'Chat'}
-                            description={'This Web chat app. I used . I used react-chat-engine application and implemented Chat feed section. Technology stack: React'}
+                            description={'This Web chat app. I used react-chat-engine npm package and implemented Chat feed section. Technology stack: React'}
                             style={chatImgStyles}
                             link={'https://sshaporov.github.io/my-chat/'}
                         />
